@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+
+p {
+  font-family: Helvetica;
+  text-align : justify;
+ }
+ 
+  .navbar {
+       display: block;
+       background-color: black;
+       overflow: hidden;
+   }
+  .navbar a {
+       float: left;
+       color: white;
+       padding: 15px 20px;
+       text-decoration: none;
+   }
+  .navbar a:hover {
+        background-color: white;
+        color: black;
+   }
+  .footer {
+        padding: 20px;
+        text-align: center;
+        background: black;
+        color: white;
+   }
+     
+  
+  
+  
+  
+  
+  
+  
+  
