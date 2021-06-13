@@ -1,61 +1,189 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>HTML dan CSS Pertemuan 2</title>
-	<link rel="stylesheet" type="text/css" href="Edit.css">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> 
-</head>
-
-<body>
-<div class="container">
-   <div class="row">
-      <div class="col-md-12">
-         <h1> Pengalaman PJJ Selama Pandemi Covid-19 </h1>
-      </div>
-   </div>
-   
-    
-   <div class="row">
-      <div class="col-md-12"> 
-         <div class="navbar">
-            <a href="index.html"> HOME </a>
-            <a href="Biodata.html"> ABOUT ME </a>
+ <!doctype html> 
+	<html lang="en"> 
+	  <head> <!-- Required meta tags --> 
+	    <meta charset="utf-8"> 
+	    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+	    
+	    <!-- Bootstrap CSS --> 
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	    
+	     <!-- My CSS -->
+	     <link rel="stylesheet" href="style.css">
+	    
+	     <title>Kunci's website</title> 
+	   </head> 
+	   <body id="home"> 
+	     <!-- Navbar -->
+	     <nav class="navbar navbar-expand-lg navbar-dark shadow fixed-top" style="background-color: #cc0000">
+	       <div class="container">
+	         <a class="navbar-brand" href="#">Keisya Danilla</a> 
+	         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	           <span class="navbar-toggler-icon"></span>
+	         </button>
+	         <div class="collapse navbar-collapse" id="navbarNav">
+	           <ul class="navbar-nav ms-auto2">
+	             <li class="nav-item">
+	               <a class="nav-link active" aria-current="page" href="#home">Home</a> 
+	             </li>
+	             <li class="nav-item"> 
+	               <a class="nav-link" href="#About">About Me</a>
+	             </li>
+	             <li class="nav-item"> 
+	               <a class="nav-link" href="#PJJ">Pengalaman selama PJJ</a>
+	             </li>
+	             <li class="nav-item">
+	               <a class="nav-link" href="#gallery">Gallery</a>
+	             </li>            
+	           </ul>
+	         </div>
+	       </div>
+	     </nav>
+	     <!-- Akhir Navbar -->
+	     
+	     
+	      <!-- jumbotron -->
+	      <section class="jumbotron text-center" style="padding-top: 6rem; background-color: #ff9999">
+	        <img src="https://i.ibb.co/sC7BJyT/20210613-020932.jpg" alt="keisya ddanilla" width="200" class="rounded-circle img-thumbnail" />
+	        <h1 class="display-4">Keisya Danilla</h1>
+	        <p class="lead">Student of <a href="http:www.smakbo.sch.id">SMK-SMAK Bogor</a></p>
+	         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+	         <path fill="#ffe6e6" fill-opacity="1" d="M0,64L60,53.3C120,43,240,21,360,37.3C480,53,600,107,720,112C840,117,960,75,1080,53.3C1200,32,1320,32,1380,32L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+	         </path>
+	         </svg>
+	        </section>
+	      <!-- Akhir Jumbotron -->
+	      
+	      
+	       <!-- About me -->
+	       <section id="About" style="background-color: #ffe6e6">
+        <div class="container">
+	         <div class="row teks-center mb-3">
+	           <div class="col-md-12">
+	             <h2 align="center">About Me</h2>
+	           </div>
+	         </div>
+	         
+	         <div class="row">	
+	           <div class="col-md-12">
+	             <table border="2" cellspacing="0" cellpadding="5">
+	               <tr align="center" bgcolor="green">
+	                 <td>FOTO</td>
+	                 <td>KETERANGAN</td>	
+	                 <td>DATA DIRI</td>
+	               </tr>
+	               <tr>
+	                 <td rowspan="8"><img src="https://i.ibb.co/sWtbgR5/Piece.png" width="200" height="200" align="center"></td>
+	                 <td>Nama</td>
+	                 <td>Keisya Danilla</td>
+	               </tr>
+	               <tr>
+	                 <td>Tampat/Tanggal Lahir</td>	
+	                 <td>Bogor, 13 Juli 2004</td>
+	               </tr>		 
+	               <tr>			 
+	                 <td>Alamat</td>			 
+	                 <td>Jl.Tatawinata, Kedung Badak no.41, Bogor</td>		 
+	               </tr>		 
+	               <tr>			 
+	                 <td>Agama</td>			 
+	                 <td>Islam</td>		 
+	               </tr>		 
+	               <tr>			 
+	                 <td>Jenis Kelamin</td>			 
+	                 <td>Perempuan</td>		 
+	               </tr>		 
+	               <tr>			 
+	                 <td>Asal Sekolah</td>			 
+	                 <td>SMK SMAK Bogor</td>		 
+	               </tr>		 
+	               <tr>			 
+	                 <td>Hobi</td>			 
+	                 <td>-</td>		
+	               </tr>		 
+	               <tr>			 
+	                 <td>Cita-Cita</td>			 
+	                 <td>Bersekolah di Luar Negeri</td>		 
+	               </tr> 
+	             </table> 
+	           </div> 
+	         </div>
+	          			
+          <div class="row mt-3"> 
+	           <div class="col-md-6"> 
+	             <p>Hai semua! Saya Keisya Danilla. Saya berumur 16 tahun, tapi sebentar lagi 17 tahun. Saya lahir di Bogor 13 Juli 2004. Saya ga terlalu punya hobi sih. Saya tinggal di Bumi, di sebuah kota yang berada di Indoneasi, lebih tepatnya di Bogor. Saya bersekolah di sekolah yang keren, namanya SMK SMAK Bogor aka SMAKBO<p>		 
+	             <p>SMAKBO itu sekolah vokasi yang lebih mendalami bidang kimia. Di sana juga kita bisa ngelakuin percobaan percobaan super seru di laboratorium langsung lho. Gak cuman satu atau dua tapi ada banyak banget labiratorium.</p>		 
+	           </div>		 		 
+	           <div class="col-md-6">		 
+	             <img src="https://i.ibb.co/fpzyV0Y/kisspng-science-scientist-chemistry-vector-chemistry-teacher-and-chemicals-5a8792e79ed9a2-6578998815.png" width="250" height="250">		 
+	           </div>		 
+	         </div>		 		 
+	        
+	         <div class="row">		 
+	           <div class="col-md-12">		 
+	             <p>Kalau kalian pengen tahu lebih banya tentang SMAKBO, Kalian bisa cari tahu langsung aja di sini<b><a href="http:www.smakbo.sch.id"> SAMKBO sekolah keren</a><b>!
+	             </p> 
+	           </div> 
+	         </div>
          </div>
-      </div>
-   </div>
-      
-   
-   <div class="row">
-      <div class="col-md-12">
-	        <p class="p1">minna-san, Konnijiwaaaa!!! &#128518 </p>
-      </div>
-   </div>
-   <div class="row">
-      <div class="col-md-8">
-	        <p class="p2">yo, ketemu lagi sama saya di sini. Bagi yang sering nonton bang jerome pasti ga asing sama sapaan tadi, mantappu jiwa. Oke kali ini saya dapet tugas untuk menceritakan pengalam pribadi saya selama pjj sekarang nih. Jujur aja ya, sebenernya pas dapet tugas ini saya agak males gitu. bukan karena ga mau ngerjain tugas atau apa, tapi saya ga tau harus ceritain tentang apa. Selama pandemi ini saya ga ngapa-ngapain. <i>flat</i> banget hidupnya, gak kaya ciki ci*ato yang <i>Life is never flat</i>. Tapi kan yang namanya tugas tetep tugas ya, udah jadi kewajiban kita sebagai murud buat ngerjain tugasnya. Jadi walaupun seadanya, saya bakal tetep seceritain pengalam saya selama PJJ. Yang Pertama dan yang sangat pasti, waktu awal awal kita PJJ saya bener bener bosen banget. serius deh! seminggu dua minggu di rumah terus tuh bikin stress &#128532. Tapi waktu itu saya ada cara buat ilangun stressnya, saya sering minta(maksa) ayah saya buat muter-muter pake motor. Kita gak ke tempat wisata atau kemana pun yang banyak kerumunan kok. Cuman muter-muter aja keliling Bogor. Kebiasaan muter muter itu masih lanjut sampe sekarang (gak boleh ditiru, nanti makin banyak polusi + nguras dompet buat beli bensin). Nah, itu kan kalau saya ngabisin waktu bosen di luar rumah. Kalau di dalem rumah, saya tuh ngabisin waktunya buat belajar (Eeeaaa), tapi bo'ong. Yakali saya ngilangin bosennya pake belajar, bukan ilang malah nambah pusing, wkwkwk. Ya paling tuh saya kalau lagi di rumah ya baca buku. Terus kalau bosen ya buka kulkas cari makana, gitu-gitu deh pokoknya.</p>
-      </div>
-
-      <div class="col-md-4"> 
-	        <p class="p3"> Kalau di paragraf sebelumnya saya ceritain tentang cara ngilangin stress dengan menghibur diri. Di paragraf ini saya pengen kaaih tutorial gimana cara nambahin beban hidup biar nambah stress. Jadi tuh ya, saya kan orangnya males ya, sebenernya gak males-males banget si(awalnya). Tapi karena sekarang tuh belajar di rumah terus, saya jadi males ngerjain tugas, suka saya tunda-tunda gitu tugasnya. akhirnya kan pas udah mendekati <i>deadline</i> saya jadi panik + stress sendiru gitu. Hampir selalu kaya gitu setiap minggunya. Padahal tuh setiap minggu saya selalu ingetin diri saya supaya ga nunda-nunda tugas. Tapi setiap buka hp buat nugas, tetep aja Instagram lebih menggoda &#128517. Jangan di tiru ya, ga baik itu.</p>
-      </div>
-   </div>	         
-	   
-
-   <div class="row">
-      <div class="col-md-12">	  	
-         <p>Udah ya, segini dulu aja. ga tau soalnya mau cerita apa lagi.</p>
-         <p> Bye semua!</p>
-         <p>&#128587 dadah!!</p>
-         <img src="https://i.ibb.co/8XZx1m0/sticker-6.png" alt="lipai hecou" width="150" height="150">
-      </div>
-   </div>
-
-
-</body>
-</html>
-	 
-	 
-	 
-	 
-	 
-	 
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+         <path fill="#ff9999" fill-opacity="1" d="M0,64L60,53.3C120,43,240,21,360,37.3C480,53,600,107,720,112C840,117,960,75,1080,53.3C1200,32,1320,32,1380,32L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+         </path>
+         </svg> 
+	       </section>
+	        <!-- Akhir About me -->
+	        
+	        <!-- Pengalaman PJJ -->
+	        <section id="PJJ" style="padding-top: 2rem; background-color: #ff9999">
+	        <div class="container">
+	          <div class="row text-center mb-5">
+	            <div class="col-md-12"> 
+	              <h2> Pengalaman PJJ Selama Pandemi Covid-19 </h2> 
+	            </div> 
+	          </div> 
+	          
+	          <div class="row"> 
+	            <div class="col-md-12">	 
+	              <p>minna-san, Konnijiwaaaa!!! &#128518 </p> 
+	            </div> 
+	          </div> 
+	          
+	          <div class="row"> 
+	            <div class="col-md-8">	 
+	              <p>yo, ketemu lagi sama saya di sini. Bagi yang sering nonton bang jerome pasti ga asing sama sapaan tadi, mantappu jiwa. Oke kali ini saya dapet tugas untuk menceritakan pengalam pribadi saya selama pjj sekarang nih. Jujur aja ya, sebenernya pas dapet tugas ini saya agak males gitu. bukan karena ga mau ngerjain tugas atau apa, tapi saya ga tau harus ceritain tentang apa. Selama pandemi ini saya ga ngapa-ngapain. <i>flat</i> banget hidupnya, gak kaya ciki ci*ato yang <i>Life is never flat</i>. Tapi kan yang namanya tugas tetep tugas ya, udah jadi kewajiban kita sebagai murud buat ngerjain tugasnya. Jadi walaupun seadanya, saya bakal tetep seceritain pengalam saya selama PJJ. Yang Pertama dan yang sangat pasti, waktu awal awal kita PJJ saya bener bener bosen banget. serius deh! seminggu dua minggu di rumah terus tuh bikin stress &#128532. Tapi waktu itu saya ada cara buat ilangun stressnya, saya sering minta(maksa) ayah saya buat muter-muter pake motor. Kita gak ke tempat wisata atau kemana pun yang banyak kerumunan kok. Cuman muter-muter aja keliling Bogor. Kebiasaan muter muter itu masih lanjut sampe sekarang (gak boleh ditiru, nanti makin banyak polusi + nguras dompet buat beli bensin). Nah, itu kan kalau saya ngabisin waktu bosen di luar rumah. Kalau di dalem rumah, saya tuh ngabisin waktunya buat belajar (Eeeaaa), tapi bo'ong. Yakali saya ngilangin bosennya pake belajar, bukan ilang malah nambah pusing, wkwkwk. Ya paling tuh saya kalau lagi di rumah ya baca buku. Terus kalau bosen ya buka kulkas cari makana, gitu-gitu deh pokoknya.</p> 
+	            </div> 
+	            
+	            <div class="col-md-4"> 	 
+	              <p> Kalau di paragraf sebelumnya saya ceritain tentang cara ngilangin stress dengan menghibur diri. Di paragraf ini saya pengen kaaih tutorial gimana cara nambahin beban hidup biar nambah stress. Jadi tuh ya, saya kan orangnya males ya, sebenernya gak males-males banget si(awalnya). Tapi karena sekarang tuh belajar di rumah terus, saya jadi males ngerjain tugas, suka saya tunda-tunda gitu tugasnya. akhirnya kan pas udah mendekati <i>deadline</i> saya jadi panik + stress sendiru gitu. Hampir selalu kaya gitu setiap minggunya. Padahal tuh setiap minggu saya selalu ingetin diri saya supaya ga nunda-nunda tugas. Tapi setiap buka hp buat nugas, tetep aja Instagram lebih menggoda &#128517. Jangan di tiru ya, ga baik itu.</p> 
+	            </div> 
+	          </div>	 	 
+	          <div class="row"> 
+	            <div class="col-md-12">	 	 
+	              <p>Udah ya, segini dulu aja. ga tau soalnya mau cerita apa lagi.</p> 
+	              <p> Bye semua!</p> 
+	              <p>&#128587 dadah!!</p> 
+	              <img src="https://i.ibb.co/8XZx1m0/sticker-6.png" alt="lipai hecou" width="150" height="150"> 
+	            </div> 
+	          </div>
+	        </div>
+	        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+	        <path fill="#cc0000" fill-opacity="1" d="M0,96L34.3,90.7C68.6,85,137,75,206,74.7C274.3,75,343,85,411,112C480,139,549,181,617,186.7C685.7,192,754,160,823,160C891.4,160,960,192,1029,218.7C1097.1,245,1166,267,1234,240C1302.9,213,1371,139,1406,101.3L1440,64L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
+	        </path>
+	        </svg>
+	        </section>  
+	        <!-- Akhir Pengalaman PJJ -->
+	        
+	         <!-- Footer -->
+	         <footer class="text-white text-center pb-3" style="background-color: #cc0000">
+	         <p>Created by <a href="https://www.instagram.com/danillakeisya/" class="text-white fw-bold">Keisya Danilla</a></p>
+	         </footer>
+	         <!-- Akhir Footer -->
+	  
+	     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+	     
+   </body> 
+ </html>
+	
+	
+	
+	
+	
